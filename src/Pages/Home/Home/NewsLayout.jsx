@@ -6,16 +6,13 @@ import LeaftNev from '../../Shared/LeftNav/LeaftNev';
 import { Outlet } from 'react-router-dom';
 import RightNav from '../../Shared/RightNav/RightNav';
 
-const Home = () => {
+const NewsLayout = () => {
     return (
         <div>
             <Header></Header>
             <Container>
                 <Row>
-                    <Col lg={3}>
-                        <LeaftNev></LeaftNev>
-                    </Col>
-                    <Col lg={6}>
+                    <Col lg={9}>
                        <Outlet></Outlet>
                     </Col>
                     <Col lg={3}>
@@ -24,9 +21,8 @@ const Home = () => {
                 </Row>
             </Container>
             <Footer></Footer>
-            
         </div>
     );
 };
 
-export default Home;
+export default NewsLayout;

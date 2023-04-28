@@ -17,8 +17,8 @@ const LeaftNev = () => {
             <h2>All Categories</h2>
             <div className='ms-4'>
                 {
-                    categories.map(categorie => <p key={categorie.id}>
-                         <Link className=' text-decoration-none text-black' to={`/categories/${categorie.id}`}>{categorie.name}</Link>
+                    categories.map(categorie => <p  key={categorie.id}>
+                         <Link to={`/categorie/${categorie.id}`} className=' text-decoration-none text-black' >{categorie.name}</Link>
                     </p>)
                 }
             </div>
@@ -26,4 +26,4 @@ const LeaftNev = () => {
     );
 };
 
-export default LeaftNev;<p>This is left nav</p>
+export default LeaftNev;
